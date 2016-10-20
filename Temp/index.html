@@ -17,16 +17,10 @@
     </div>
     <div class="form-group narrow-button">
       <button class="btn btn-primary" ng-click="narrow.found();">Narrow It Down For Me!</button>
-    </div>    
-    <div style="display:block;">
-        <ol>
-            <found-items ng-repeat="item in narrow.items"></found-items>   
-        </ol>
     </div>
-    
-           
+
     <!-- found-items should be implemented as a component -->
-    
+    <found-items found-items="...." on-remove="...."></found-items>
   </div>
 
 </body>
